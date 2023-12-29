@@ -11,19 +11,19 @@ const nextConfig = {
     //     protocol: "http",
     //   },
     // ],
-    remotePatterns: [
-      {
-        hostname: "localhost",
-        pathname: "**",
-        port: "3000",
-        protocol: "http",
-      },
-      {
-        hostname: "digital-hippo-ryuga.onrender.com",
-        protocol: "https",
-      },
-    ],
-    // domains: ["localhost", "digital-hippo-ryuga.onrender.com"],
+    // remotePatterns: [
+    //   {
+    //     hostname: "localhost",
+    //     pathname: "**",
+    //     port: "3000",
+    //     protocol: "http",
+    //   },
+    //   {
+    //     hostname: "digital-hippo-ryuga.onrender.com",
+    //     protocol: "https",
+    //   },
+    // ],
+    domains: ["localhost", "digital-hippo-ryuga.onrender.com"],
   },
 };
 
