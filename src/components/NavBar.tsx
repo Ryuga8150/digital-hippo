@@ -57,16 +57,16 @@ export default async function NavBar({}: Props) {
                     </Link>
                   )}
 
-                  {/* {user ? null : (
+                  {user ? (
                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                  )} */}
+                  ) : null}
 
                   {user ? null : (
                     <div className="flex lg:ml-6">
                       <span
                         className="h-6 w-px bg-gray-200"
                         aria-hidden="true"
-                      ></span>
+                      />
                     </div>
                   )}
 

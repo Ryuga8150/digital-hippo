@@ -7,6 +7,7 @@ import Link from "next/link";
 import { cn, formatPrice } from "@/lib/utils";
 import { PRODUCT_CATEGORIES } from "@/config";
 import ImageSlider from "./ImageSlider";
+import { useRouter } from "next/navigation";
 
 const ProductPlaceholder = () => {
   return (
@@ -28,7 +29,7 @@ interface ProductListingProps {
 
 const ProductListing = ({ product, index }: ProductListingProps) => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-
+  const router = useRouter();
   useEffect(() => {
     // to stagger the products
     const timer = setTimeout(() => {
@@ -55,6 +56,8 @@ const ProductListing = ({ product, index }: ProductListingProps) => {
           "visible animate-in fade-in-5": isVisible,
         })}
         href={`/product/${product.id}`}
+        onClick={() => console.log(`Clicked link with href=${product.id} `)}
+        // onClick={() => router.push(`/product/${product.id}`)}
       >
         <div className="flex flex-col w-full">
           <ImageSlider urls={validUrls} />
