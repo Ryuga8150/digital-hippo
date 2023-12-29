@@ -15,11 +15,11 @@ const nextConfig = {
       {
         hostname: "localhost",
         pathname: "**",
+        port: "3000",
         protocol: "http",
       },
       {
         hostname: "digital-hippo-ryuga.onrender.com",
-        pathname: "**",
         protocol: "https",
       },
     ],
