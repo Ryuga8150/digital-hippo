@@ -8,6 +8,7 @@ import Cart from "./Cart";
 import { getServerSideUser } from "@/lib/payloadUtils";
 import { cookies } from "next/headers";
 import UserAccountNav from "./UserAccountNav";
+import MobileNav from "./MobileNav";
 type Props = {};
 
 export default async function NavBar({}: Props) {
@@ -20,7 +21,7 @@ export default async function NavBar({}: Props) {
         <MaxWidthWrapper>
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
-              {/* TODO: Mobile Nav */}
+              <MobileNav />
               <div className="ml-4 flex lg:ml-0">
                 <Link href="/">
                   <Icons.logo className="h-10 w-10" />
