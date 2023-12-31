@@ -4,6 +4,10 @@ Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind
 
 ![Project Image](https://github.com/Ryuga8150/digital-hippo/blob/master/public/thumbnail.jpg)
 
+## Deployed Version 🚀
+
+Live demo (Feel free to visit) 👉🏻 : https://digital-hippo-ryuga.onrender.com/
+
 ## Features
 
 - 🛠️ Complete marketplace built from scratch in Next.js 14
@@ -28,7 +32,7 @@ To get started with this project, run
   git clone https://github.com/Ryuga8150/digital-hippo.git
 ```
 
-and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
+and copy the sampleEnv.md variables into a separate .env file, fill them out & and that's all you need to get started!
 
 ## License 📄
 
